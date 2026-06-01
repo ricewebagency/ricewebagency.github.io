@@ -1094,6 +1094,10 @@ video {
   height: 1.5rem;
 }
 
+.h-\[260px\] {
+  height: 260px;
+}
+
 .h-\[38rem\] {
   height: 38rem;
 }
@@ -1118,16 +1122,8 @@ video {
   height: 100%;
 }
 
-.h-\[260px\] {
-  height: 260px;
-}
-
 .max-h-\[550px\] {
   max-height: 550px;
-}
-
-.max-h-\[400px\] {
-  max-height: 400px;
 }
 
 .min-h-11 {
