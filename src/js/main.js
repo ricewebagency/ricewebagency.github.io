@@ -1,0 +1,50 @@
+﻿import { initSmoothScroll } from "./modules/smooth-scroll.js";
+import { initBrandCarousel } from "./modules/brand-carousel.js";
+import { initContactTabs } from "./modules/contact-tabs.js";
+import { initFaq } from "./modules/faq.js";
+import { initHeaderBadgeAnimation } from "./modules/header-badge-animation.js";
+import { initHeaderGlobe } from "./modules/header-globe.js";
+import { initHeaderState } from "./modules/header-state.js";
+import { initHeroVideo } from "./modules/hero-video.js";
+import { initIntroOverlay } from "./modules/intro-overlay.js";
+import { initMarquee } from "./modules/marquee.js";
+import { initMobileMenu } from "./modules/mobile-menu.js";
+import { initRevealAnimations } from "./modules/reveal-animations.js";
+import { initUnderlinedHeading } from "./modules/underlined-heading.js";
+import { initReviews } from "./modules/reviews.js";
+import { initValuesCarousel } from "./modules/values-carousel.js";
+import { initViewportMetrics } from "./modules/viewport-metrics.js";
+import { initYear } from "./modules/year.js";
+import { initCasesGallery } from "./modules/cases-gallery.js";
+import { initOpposingParallaxGallery } from "./modules/opposing-parallax-gallery.js";
+import { initPageVisibilityTitle } from "./modules/page-visibility-title.js";
+import { initProcesNav } from "./modules/proces-nav.js";
+import { initPortfolio } from "./modules/portfolio.js";
+import { initReviewCarousel } from "./modules/review-carousel.js";
+
+initPageVisibilityTitle({
+	delayToHiddenMs: 10500,
+	delayToOriginalMs: 5500,
+});
+initSmoothScroll();
+initYear();
+initViewportMetrics();
+initIntroOverlay();
+initMobileMenu();
+initRevealAnimations();
+initFaq();
+initHeaderState();
+initHeaderGlobe();
+initHeaderBadgeAnimation();
+initUnderlinedHeading();
+initHeroVideo();
+initMarquee();
+initBrandCarousel();
+initValuesCarousel();
+initProcesNav();
+initReviews();
+initContactTabs();
+initCasesGallery();
+initOpposingParallaxGallery();
+initPortfolio();
+initReviewCarousel();

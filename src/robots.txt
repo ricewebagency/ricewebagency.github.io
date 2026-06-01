@@ -1,0 +1,7 @@
+# riceweb.nl robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://riceweb.nl/sitemap.xml
