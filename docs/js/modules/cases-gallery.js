@@ -1,33 +1,43 @@
 const GALLERY_IMAGE_COLUMNS = [
 	[
+		{ src: "./assets/images/md-compleet.jpg", alt: "MD Compleet — Bedrijfswebsite", href: "./portfolio" },
+		{ src: "./assets/images/oottat-tattoo.jpg", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
+		{ src: "./assets/images/md-compleet.jpg", alt: "MD Compleet — Bedrijfswebsite", href: "./portfolio" },
+		{ src: "./assets/images/klimazon-3.jpg", alt: "Klimazon — Klimaat- & Zontechniek", href: "./portfolio" },
+		{ src: "./assets/images/proper-beauty-salon-3.jpg", alt: "Proper Beauty Salon — Nagelsalon", href: "./portfolio" },
+		{ src: "./assets/images/glamour-by-tink.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
+		{ src: "./assets/images/petras-laser-en-beauty-1.jpg", alt: "Petras Laseren Beauty — Schoonheidssalon", href: "./portfolio" },
 		{ src: "./assets/images/oottat-tattoo-2.jpg", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
+	],
+	[
+		{ src: "./assets/images/glamour-by-tink-2.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
+		{ src: "./assets/images/klimazon.jpg", alt: "Klimazon — Klimaat- & Zontechniek", href: "./portfolio" },
+		{ src: "./assets/images/oottat-tattoo-3.jpg", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
 		{ src: "./assets/images/proper-beauty-salon.jpg", alt: "Proper Beauty Salon — Nagelsalon", href: "./portfolio" },
-		{ src: "./assets/images/glamour-by-tink.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
-		{ src: "./assets/images/klimazon.jpg", alt: "Klimazon — Klimaat- & Zontechniek", href: "./portfolio" },
-		{ src: "./assets/images/portfolio/portfolio-oottattattoo-1920-1080.png", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
-		{ src: "./assets/images/klimazon-2.jpg", alt: "Klimazon — Klimaat- & Zontechniek", href: "./portfolio" },
 		{ src: "./assets/images/studio-ieks-2.jpg", alt: "Studio IEKS — Lokale Artiestenstudio", href: "./portfolio" },
-		{ src: "./assets/images/glamour-by-tink-2.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
-	],
-	[
-		{ src: "./assets/images/studio-ieks.jpg", alt: "Studio IEKS — Lokale Artiestenstudio", href: "./portfolio" },
-		{ src: "./assets/images/klimazon.jpg", alt: "Klimazon — Klimaat- & Zontechniek", href: "./portfolio" },
-		{ src: "./assets/images/oottat-tattoo.jpg", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
-		{ src: "./assets/images/studio-ieks-2.jpg", alt: "Studio IEKS — Lokale Artiestenstudio", href: "./portfolio" },
-		{ src: "./assets/images/oottat-tattoo-2.jpg", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
-		{ src: "./assets/images/glamour-by-tink-2.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
-		{ src: "./assets/images/proper-beauty-salon-2.jpg", alt: "Proper Beauty Salon — Nagelsalon", href: "./portfolio" },
+		{ src: "./assets/images/md-compleet-2.jpg", alt: "MD Compleet — Bedrijfswebsite", href: "./portfolio" },
+		{ src: "./assets/images/petras-laser-en-beauty-2.jpg", alt: "Petras Laseren Beauty — Schoonheidssalon", href: "./portfolio" },
 		{ src: "./assets/images/glamour-by-tink.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
 	],
 	[
-		{ src: "./assets/images/oottat-tattoo.jpg", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
-		{ src: "./assets/images/glamour-by-tink.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
-		{ src: "./assets/images/studio-ieks.jpg", alt: "Studio IEKS — Lokale Artiestenstudio", href: "./portfolio" },
 		{ src: "./assets/images/proper-beauty-salon-2.jpg", alt: "Proper Beauty Salon — Nagelsalon", href: "./portfolio" },
 		{ src: "./assets/images/klimazon-2.jpg", alt: "Klimazon — Klimaat- & Zontechniek", href: "./portfolio" },
-		{ src: "./assets/images/portfolio/portfolio-petraslaserenbeauty-1920-1080.png", alt: "Petras Laseren Beauty — Schoonheidssalon", href: "./portfolio" },
-		{ src: "./assets/images/glamour-by-tink-2.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
+		{ src: "./assets/images/md-compleet-3.jpg", alt: "MD Compleet — Bedrijfswebsite", href: "./portfolio" },
+		{ src: "./assets/images/studio-ieks.jpg", alt: "Studio IEKS — Lokale Artiestenstudio", href: "./portfolio" },
 		{ src: "./assets/images/oottat-tattoo-2.jpg", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
+		{ src: "./assets/images/glamour-by-tink-2.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
+		{ src: "./assets/images/klimazon-4.jpg", alt: "Klimazon — Klimaat- & Zontechniek", href: "./portfolio" },
+		{ src: "./assets/images/proper-beauty-salon-5.jpg", alt: "Proper Beauty Salon — Nagelsalon", href: "./portfolio" },
+	],
+	[
+		{ src: "./assets/images/studio-ieks-2.jpg", alt: "Studio IEKS — Lokale Artiestenstudio", href: "./portfolio" },
+		{ src: "./assets/images/glamour-by-tink.jpg", alt: "Glamour by Tink — PMU-Salon & Academy", href: "./portfolio" },
+		{ src: "./assets/images/petras-laser-en-beauty-1.jpg", alt: "Petras Laseren Beauty — Schoonheidssalon", href: "./portfolio" },
+		{ src: "./assets/images/proper-beauty-salon-5.jpg", alt: "Proper Beauty Salon — Nagelsalon", href: "./portfolio" },
+		{ src: "./assets/images/md-compleet.jpg", alt: "MD Compleet — Bedrijfswebsite", href: "./portfolio" },
+		{ src: "./assets/images/klimazon-4.jpg", alt: "Klimazon — Klimaat- & Zontechniek", href: "./portfolio" },
+		{ src: "./assets/images/oottat-tattoo.jpg", alt: "Oottat Tattoo — Zaanse Tattooshop", href: "./portfolio" },
+		{ src: "./assets/images/studio-ieks.jpg", alt: "Studio IEKS — Lokale Artiestenstudio", href: "./portfolio" },
 	],
 ];
 
@@ -49,7 +59,7 @@ export function initCasesGallery() {
 
 	tracks.forEach((track) => {
 		const columnIndex = Number(track.dataset.galleryColumn ?? -1);
-		const columnImages = GALLERY_IMAGE_COLUMNS[columnIndex];
+		const columnImages = GALLERY_IMAGE_COLUMNS[columnIndex] ?? GALLERY_IMAGE_COLUMNS[0];
 
 		if (!Array.isArray(columnImages) || !columnImages.length) {
 			return;
@@ -80,7 +90,7 @@ export function initCasesGallery() {
 				image.alt = repeatIndex === 0 ? alt : "";
 				image.loading = "lazy";
 				image.decoding = "async";
-				image.className = "aspect-[16/9] h-full w-full object-cover";
+				image.className = "aspect-[16/9] h-full w-full object-cover [overflow-clip-margin:unset]";
 
 				link.append(image);
 				fragment.append(link);

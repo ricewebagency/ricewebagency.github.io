@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="nl">
+<html lang="nl" class="bg-slate-100">
 
 <head>
   <meta charset="UTF-8" />
@@ -22,10 +22,6 @@
 </head>
 
 <body class="bg-slate-100 font-sans text-slate-900 antialiased selection:bg-blue-200 selection:text-slate-900" data-page="404">
-  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-    <div class="absolute inset-0 bg-black/80"></div>
-  </div>
-
   <header class="fixed inset-x-0 top-0 z-[150] bg-transparent" data-site-header data-change-text-color="false">
     <div class="bg-[#daf9a0] text-center text-xs font-regular text-black/80 md:text-[14px]">
       <div
@@ -36,7 +32,7 @@
           <path
             d="M7.155 7.373l-.738-.146c-.015.08-1.459 8.095 10.113 13.62l.323-.678C5.836 14.908 7.095 7.678 7.155 7.373z" />
         </svg>
-        <span class="block min-w-0 truncate text-center">Online <span class="font-bold">Web Agency</span>. Wij
+        <span class="block min-w-0 truncate text-center md:overflow-visible md:text-clip md:whitespace-normal">Online <span class="font-bold">Web Agency</span>. Wij
           bouwen <strong>snelheid</strong>, <strong>creativiteit</strong> en
           <strong>performance</strong></span>
         <svg class="h-5 w-4 shrink-0 fill-current" viewBox="0 0 17 24" aria-hidden="true">
@@ -97,27 +93,27 @@
             <nav
               class="flex min-w-0 items-center gap-5 text-lg tracking-[-0.05em] font-medium text-black/80 transition-colors duration-300 lg:gap-7 lg:text-2xl"
               data-header-text>
-              <a class="transition hover:text-black" href="./#diensten">Diensten</a>
-              <a class="transition hover:text-black" href="./#kernwaarden">Proces</a>
-              <a class="transition hover:text-black" href="../portfolio">Ons werk</a>
-              <a class="transition hover:text-black" href="./#contact">Contact</a>
+              <a class="transition hover:text-[#bba0f9]" href="./">Home</a>
+              <a class="transition hover:text-[#bba0f9]" href="./proces/">Proces</a>
+              <a class="transition hover:text-[#bba0f9]" href="./portfolio">Ons werk</a>
+              <a class="transition hover:text-[#bba0f9]" href="./contact/">Contact</a>
             </nav>
 
             <nav
               class="ml-auto flex items-center gap-5 text-[0.95rem] font-medium text-black/80 transition-colors duration-300 lg:gap-7 lg:text-[1rem]"
               data-header-text>
-              <a class="transition hover:text-black" href="../portfolio">Ons werk</a>
+              <a class="transition hover:text-[#bba0f9]" href="./portfolio">Ons werk</a>
             </nav>
           </div>
 
           <div class="hidden items-center gap-2 md:flex lg:gap-3">
-            <a href="./#contact-panel" data-contact-open="call"
-              class="inline-flex items-center rounded-[1.15rem] border-solid border-[0px] border-black/30 bg-white/50 backdrop-blur-xl px-4 py-3 text-[0.95rem] font-bold text-black/80 shadow-sm transition-[border-width,border-color,background-color,color] duration-400 ease-in-out hover:border-black/80 hover:text-black hover:bg-white lg:px-5 lg:text-lg"
+            <a href="./contact" data-contact-open="call"
+              class="inline-flex items-center rounded-[1.15rem] border-solid border-[0px] border-black/30 bg-[#daf9a0] backdrop-blur-xl px-4 py-3 text-[0.95rem] font-bold text-black/80 shadow-sm transition-[border-width,border-color,background-color,color] duration-400 ease-in-out hover:border-black/80 hover:text-black hover:bg-[#bba0f9] lg:px-5 lg:text-lg"
               data-header-outline-button>
               Plan een call
             </a>
-            <a href="./#contact-panel" data-contact-open="message"
-              class="inline-flex items-center rounded-[1.15rem] bg-black/80 px-4 py-3 text-[0.95rem] font-semibold text-white shadow-[0_14px_35px_rgba(15,23,42,0.22)] transition hover:bg-black hover:text-white lg:px-5 lg:text-lg">
+            <a href="./contact" data-contact-open="message"
+              class="inline-flex items-center rounded-[1.15rem] bg-black/80 px-4 py-3 text-[0.95rem] font-semibold text-white shadow-[0_14px_35px_rgba(15,23,42,0.22)] transition hover:bg-[#bba0f9] hover:text-black/80 lg:px-5 lg:text-lg">
               Contact
             </a>
           </div>
@@ -286,10 +282,10 @@
         <div class="flex flex-col items-center gap-6 lg:items-start lg:justify-between lg:gap-4">
           <div class="flex flex-col items-center gap-4 lg:items-start lg:gap-3">
             <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 lg:justify-start">
-              <a class="transition hover:text-[#bba0f9]" href="./#diensten">Diensten</a>
-              <a class="transition hover:text-[#bba0f9]" href="./#kernwaarden">Proces</a>
-              <a class="transition hover:text-[#bba0f9]" href="../portfolio">Ons werk</a>
-              <a class="transition hover:text-[#bba0f9]" href="./#contact">Contact</a>
+              <a class="transition hover:text-[#bba0f9]" href="./">Home</a>
+              <a class="transition hover:text-[#bba0f9]" href="./proces/">Proces</a>
+              <a class="transition hover:text-[#bba0f9]" href="./portfolio">Ons werk</a>
+              <a class="transition hover:text-[#bba0f9]" href="./contact/">Contact</a>
             </div>
             <p class="text-center lg:text-left">
               © <span id="year"></span> Rice Web — B2B Web Agency
@@ -303,7 +299,12 @@
 
         <div class="w-full flex flex-col gap-12 text-white/70 lg:gap-16 lg:w-max lg:flex-row">
           <div class="w-full flex flex-col items-center lg:items-start lg:justify-start">
-            <img class="mb-3 h-8 w-8" src="https://flagcdn.com/nl.svg" alt="Netherlands flag">
+            <svg class="mb-3 h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6" role="img"
+              aria-label="Netherlands flag">
+              <path fill="#21468B" d="M0 0h9v6H0z" />
+              <path fill="#FFF" d="M0 0h9v4H0z" />
+              <path fill="#AE1C28" d="M0 0h9v2H0z" />
+            </svg>
             <div class="w-full flex flex-col items-center lg:items-start">
               <span class="w-max">
                 Bestevaerstraat 16

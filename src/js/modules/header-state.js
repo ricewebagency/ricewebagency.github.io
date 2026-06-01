@@ -33,6 +33,7 @@ export function initHeaderState() {
 
     headerOutlineButtons.forEach((button) => {
       button.style.borderWidth = compact ? "1px" : "0px";
+      button.style.background = compact ? "white" : "transparent";
     });
 
     if (headerLogo instanceof HTMLImageElement) {
