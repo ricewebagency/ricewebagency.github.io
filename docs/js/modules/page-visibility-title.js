@@ -3,7 +3,7 @@
 		return;
 	}
 
-	const hiddenTitle = options.hiddenTitle ?? "Psst.. Website laten bouwen?";
+	const hiddenTitle = options.hiddenTitle ?? "Psst.. Creatieve website nodig?";
 	const delayToHiddenMs = Number.isFinite(options.delayToHiddenMs) ? Math.max(0, options.delayToHiddenMs) : 7500;
 	const delayToOriginalMs = Number.isFinite(options.delayToOriginalMs) ? Math.max(0, options.delayToOriginalMs) : 1000;
 	const originalTitle = document.title;

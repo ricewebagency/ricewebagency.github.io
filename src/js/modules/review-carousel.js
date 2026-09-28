@@ -1,18 +1,18 @@
 const REVIEWS_TOP = [
   {
-    name: "Inti K.",
-    company: "Studio IEKS",
-    quote: "Ik twijfelde lang of een nieuwe website echt nodig was, maar dit heeft mijn bedrijf echt een boost gegeven. Alles klopt — van de uitstraling tot de manier waarop klanten nu binnenkomen.",
-  },
-  {
     name: "Chelsea J.",
     company: "Proper Beauty Salon",
-    quote: "Rice heeft precies begrepen wat ik wilde, zonder dat ik het zelf goed kon omschrijven. Het resultaat voelt als ik, maar dan professioneel. Mijn klanten reageren er constant positief op.",
+    quote: "Ik werk al een tijd samen met Maurice van Rice Web en ben nog steeds erg tevreden. De communicatie verloopt altijd soepel en hij reageert snel. Of het nu om kleine aanpassingen of grotere problemen gaat, hij denkt mee en lost alles vakkundig op. Maurice is betrouwbaar en komt zijn afspraken na, wat veel vertrouwen geeft. Voor mijn volgende project werk ik dan ook graag weer met Rice Web samen. Echt een aanrader als je een betrokken en professionele webpartner zoekt!!",
+  },
+  {
+    name: "Inti K.",
+    company: "Studio IEKS",
+    quote: "Ik ben erg tevreden! Alles klopt, de uitstraling en de manier waarop klanten nu contact kunnen opnemen. Mooi werk, thx!",
   },
   {
     name: "Boy B.",
     company: "Klimazon",
-    quote: "Snelle communicatie, denken écht mee en leveren wat ze beloven. De website staat er en doet wat hij moet doen. Meer kan ik niet vragen.",
+    quote: "Super tevreden met Maurice en zijn diensten: mijn website Klimazon werkt super. Mijn tweede website is al in de maak door Maurice. Ook krijg ik snel antwoorden op mijn vragen en past hij snel dingen aan als ik hier om vroeg. Aanrader!",
   },
   {
     name: "Rafael B.",
@@ -23,24 +23,24 @@ const REVIEWS_TOP = [
 
 const REVIEWS_BOTTOM = [
   {
-    name: "Guido P.",
-    company: "Oottat Tattoo",
-    quote: "Professioneel advies, snel schakelen, sterke eigen input en vooral heel creatief. Ik ben ontzettend blij met mijn website echt WAUW!",
-  },
-  {
     name: "Petra V.",
     company: "Petra's Laser & Beauty",
-    quote: "Ik had wel wat ideeën maar wist niet hoe ik dat moest vertalen. Rice heeft dat voor me gedaan en het ziet er geweldig uit. Klanten vinden de site nu veel fijner en boeken sneller.",
+    quote: "Maurice heeft mijn website helemaal zelf ontworpen! Ben er erg blij mee. Eventuele aanpassingen worden zo gedaan. Luisterd en denkt heel goed mee👌",
   },
   {
     name: "Marissa P.",
     company: "Glamour by Tink",
-    quote: "Fijn contact, eerlijk advies en een eindresultaat waar ik trots op ben. Ze dachten mee over dingen waar ik zelf nooit aan had gedacht. Absoluut een aanrader.",
+    quote: "Wij zijn ontzettend blij met onze website! Vanaf het eerste moment wordt er echt met je meegedacht en er is oog voor ieder detail. Onze wensen worden niet alleen begrepen, maar er wordt ook actief meegedacht over hoe het nog mooier en beter kan. De communicatie is fijn, persoonlijk en professioneel en het eindresultaat is precies geworden wat we voor ogen hadden. Je merkt aan alles dat er met passie en aandacht wordt gewerkt. Wij zijn supertrots op onze website en zouden Maurice onze websitebouwer dan ook aan iedereen aanraden! Echt een topper! 🙌🏼✨",
   },
   {
     name: "Rafael B.",
     company: "Marketing Partner",
     quote: "Als partner van Rice werk ik regelmatig met hun websites. De basis van de sites zijn slim opgezet, waardoor wij online advertenties en tracking snel kunnen implementeren.",
+  },
+  {
+    name: "Guido P.",
+    company: "Oottat Tattoo",
+    quote: "Supertevreden over Maurice! De communicatie verloopt prettig en vlot, en hij is een leuke en betrokken gast. Ook nadat de website klaar is, staat hij snel voor je klaar als je vragen hebt. Hij maakt geen standaard websites, maar denkt creatief mee en voegt leuke extra’s toe. Absoluut een aanrader!",
   },
 ];
 
@@ -49,6 +49,7 @@ const LERP_FACTOR = 0.1;
 const SETTLE_THRESHOLD = 0.05;
 const COLORS = ["#bba0f9", "#daf9a0"];
 const MAX_SCROLL_DELTA = 28;
+const STAR_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="StarRating-module__starMd--evMQ2 StarRating-module__starFilled--eVKbd star-rating__star star-rating__star--md star-rating__star--filled h-4 w-4 shrink-0"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd"></path></svg>`;
 
 function getScrollSpeedMultiplier() {
   if (window.matchMedia("(max-width: 640px)").matches) {
@@ -77,7 +78,7 @@ function getInitials(name) {
 
 function createCard({ name, company, quote, color }) {
   const oppositeColor = color === COLORS[0] ? COLORS[1] : COLORS[0];
-  
+
   const article = document.createElement("article");
   article.className =
     "flex-shrink-0 w-[17rem] sm:w-[18.75rem] rounded-lg bg-slate-50 skew-x-[-4deg] select-none";
@@ -111,17 +112,41 @@ function createCard({ name, company, quote, color }) {
   meta.append(nameEl, roleEl);
   header.append(avatar, meta);
 
+  const rating = document.createElement("div");
+  rating.className = "flex items-center justify-between gap-3";
+  rating.setAttribute("aria-label", "5 uit 5 sterren");
+
+  const stars = document.createElement("div");
+  stars.className = "flex items-center gap-0 text-[1.1rem] leading-none text-[#fbbc04]";
+  stars.innerHTML = STAR_SVG.repeat(5);
+
+  const googleButton = document.createElement("a");
+  googleButton.href = "https://www.google.com/search?sca_esv=080dae4805299e94&sxsrf=APpeQnvAbXjrG2XWWUB8OcZP4FmYm-jF3A:1790588427237&q=rice+web&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_yilqUAkovO7UP5Q3YTSSFgwhTI1PuqFmN9JAZqKPBNXrZ-tuGtX4y3W3vv7ULliIc04Tlc%3D&uds=AJ5uw1-CsN_VmOWvV4nQCD6b3IOKOc-36RflhvvHqvcO2Qk36HMPY6BDauOiEEmpvDkCqP16k_EmyBskES0R7ZIfXcwmtbwwfBla_UpD3_EvMPBVNBKyEgU&sa=X&ved=2ahUKEwj8tZPZ_ZCXAxXngf0HHUUSB_IQ3PALegQIMhAF&biw=1920&bih=911&dpr=1";
+  googleButton.target = "_blank";
+  googleButton.rel = "noopener noreferrer";
+  googleButton.setAttribute("aria-label", "Lees reviews op Google");
+  googleButton.className = "shrink-0 inline-flex items-center justify-center";
+
+  const googleIcon = document.createElement("img");
+  googleIcon.src = "./assets/icons/google-icon.svg";
+  googleIcon.alt = "";
+  googleIcon.setAttribute("aria-hidden", "true");
+  googleIcon.className = "h-7 w-auto";
+
+  googleButton.appendChild(googleIcon);
+  rating.append(stars, googleButton);
+
   const quoteEl = document.createElement("blockquote");
-  quoteEl.className = "text-sm leading-relaxed text-slate-700";
+  quoteEl.className = "line-clamp-4 text-sm leading-relaxed text-slate-700";
   quoteEl.textContent = `"${quote}"`;
 
-  surface.append(header, quoteEl);
+  surface.append(header, quoteEl, rating);
   return article;
 }
 
 function buildTrack(trackEl, reviews) {
   let cardIndex = 0;
-  
+
   for (let i = 0; i < COPIES; i++) {
     reviews.forEach((review) => {
       const avatarColor = COLORS[cardIndex % 2];
@@ -199,7 +224,7 @@ export function initReviewCarousel() {
       }
 
       // First row (direction -1) starts at beginning, second row (direction 1) starts at end
-      const initialScrollLeft = direction === 1 
+      const initialScrollLeft = direction === 1
         ? 2 * setWidth - row.offsetWidth
         : setWidth;
       row.scrollLeft = initialScrollLeft;
