@@ -2,7 +2,7 @@ const REVIEWS_TOP = [
   {
     name: "Chelsea J.",
     company: "Proper Beauty Salon",
-    quote: "Ik werk al een tijd samen met Maurice van Rice Web en ben nog steeds erg tevreden. De communicatie verloopt altijd soepel en hij reageert snel. Of het nu om kleine aanpassingen of grotere problemen gaat, hij denkt mee en lost alles vakkundig op. Maurice is betrouwbaar en komt zijn afspraken na, wat veel vertrouwen geeft. Voor mijn volgende project werk ik dan ook graag weer met Rice Web samen. Echt een aanrader als je een betrokken en professionele webpartner zoekt!!",
+    quote: "Ik werk al een tijd samen met Maurice van RICE Web en ben nog steeds erg tevreden. De communicatie verloopt altijd soepel en hij reageert snel. Of het nu om kleine aanpassingen of grotere problemen gaat, hij denkt mee en lost alles vakkundig op. Maurice is betrouwbaar en komt zijn afspraken na, wat veel vertrouwen geeft. Voor mijn volgende project werk ik dan ook graag weer met RICE Web samen. Echt een aanrader als je een betrokken en professionele webpartner zoekt!!",
   },
   {
     name: "Inti K.",
