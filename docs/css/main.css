@@ -1599,10 +1599,6 @@ video {
   cursor: grab;
 }
 
-.cursor-not-allowed {
-  cursor: not-allowed;
-}
-
 .touch-manipulation {
   touch-action: manipulation;
 }
